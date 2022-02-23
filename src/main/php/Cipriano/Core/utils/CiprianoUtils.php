@@ -43,6 +43,7 @@ class CiprianoUtils {
 	const CTS_CUENTA_CASA = 3;
 	const CTS_CUENTA_CAMION = 4;
     const CTS_CUENTA_OTRA = 5;
+    const CTS_CUENTA_VIAJES = 6;
 
 
 	const CTS_DATE_FORMAT = 'd/m/Y';
@@ -681,6 +682,11 @@ class CiprianoUtils {
     public static function getCuentaOtra(){
 
         return ServiceFactory::getBancoService()->get( self::CTS_CUENTA_OTRA );
+    }
+
+    public static function getCuentaViajes(){
+
+        return ServiceFactory::getBancoService()->get( self::CTS_CUENTA_VIAJES );
     }
 
 
