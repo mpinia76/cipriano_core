@@ -19,10 +19,10 @@ class CiprianoConfig {
 	 */
 	private static $instance;
 
-	private $dbHost = '163.10.35.34';
+	private $dbHost = 'localhost';
 	private $dbName = "cose_cipriano";
 	private $dbUser = 'root';
-	private $dbPassword = 'secyt';
+	private $dbPassword = '';
 
 	private $connectionDriver = "pdo_mysql";
 	private $defaultPersistenUnit = "default";
